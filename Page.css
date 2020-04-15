@@ -1,0 +1,185 @@
+  body{
+  border: 1px solid #d1cece;
+  display: flex;
+  justify-content: center;
+}
+
+.nested{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(350px, 3);
+  grid-auto-rows: minmax(250px, auto);
+  grid-template-areas:
+  "hd hd hd hd hd hd hd hd hd"
+  "main main main main main sd sd sd sd"
+  "lw lw lw lw lw lw sl sl sl"
+  "fl fl fl fl fl fl sl sl sl"
+  "ft ft ft ft ft ft ft ft ft"
+  "nw nw nw nw nw nw ow ow ow"  /**** Not added ow anywhere **/
+  "st st st st st st st st st"
+  "bt bt bt bt bt bt bt bt bt"
+  "bt bt bt bt bt bt bt bt bt";
+ justify-content: center;
+ grid-gap: 2em;
+}
+
+#border{
+  border: 4px solid red;
+
+}
+
+.none{
+grid-area: hd;
+height: 8em;
+width: 50em;
+top: 5em;
+position: relative;
+
+}
+
+.nona{
+  grid-area: main;
+  height: 10em;
+  width: 50em;
+}
+
+.nons{
+  grid-area: sd;
+  width: 10em;
+  position: relative;
+  bottom: 8em;
+}
+
+.nond{
+  grid-area: lw;
+  height: 5em;
+  width: 50em;
+  position: relative;
+  bottom: 5em;
+}
+
+.nonf{
+  grid-area: sl;
+  width: 10em;
+  position: relative;
+  bottom: 8em;
+  right: 1em;
+}
+
+.nong{
+  grid-area: fl;
+  height: 5em;
+  width: 50em;
+  position: relative;
+  bottom: 15em;
+}
+
+.non{
+  grid-area: lf;
+}
+
+.on{
+  grid-area: ft;
+  position: relative;
+  height: 20em;
+  width: 50em;
+  bottom: 24em;
+}
+
+.li{
+  grid-area: nw;
+  height: 2em;
+  position: relative;
+  bottom: 25em;
+}
+
+.nons{
+grid-area: st;
+width: 52em;
+height: 10em;
+position: relative;
+bottom: 38em;
+}
+
+.bt{
+  grid-area: st;
+  position: absolute;
+  top: 85em;
+  left: 8em;
+  width: 52em;
+  height: 30em;
+                          /***********************/
+
+}
+
+.noitem{
+  text-align:;
+}
+.sub{
+  position: relative;
+  top: 16px;
+}
+
+.center{
+  position: absolute;
+  text-align: center;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.search{
+position: absolute;
+left: 45em;
+bottom: 50px;
+}
+/********************************Need to use this side **/
+
+.side{
+ position: absolute;
+  border: 3px solid green;
+  width: 14em;
+  height: 14em;
+  margin-top: 3em;
+  margin-left: 52em;
+  background-color: #dbcbcb;
+}
+
+.oldpost{
+  border: 2px solid #2699ec;
+width: 85px;
+height: 25px;
+border-radius: 30%;
+color: #2699ec;
+text-align: center;
+cursor: pointer;
+position: absolute;
+top: 400px;
+}
+
+.newpost{
+  border: 2px solid #2699ec;
+width: 85px;
+height: 25px;
+border-radius: 30%;
+color: #2699ec;
+text-align: center;
+cursor: pointer;
+position: absolute;
+top: 400px;
+left: 7em;
+}
+
+.footer{
+  width: 80em;
+  height: 290px;
+  position: absolute;
+  margin-top: 21.5em;
+  right: -250px;
+}
+
+.text-decor{
+  text-decoration: underline;
+  line-height: normal;
+}
